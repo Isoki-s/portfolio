@@ -1,6 +1,6 @@
 <template lang="pug">
-  v-footer(:fixed="fixed" app)
-    span &copy; 2018
+  v-footer(color="indigo" app)
+    span(class="white--text") &copy; 2018
 </template>
 
 <script>

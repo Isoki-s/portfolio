@@ -1,0 +1,52 @@
+[
+  {
+    "name"  : "Illustarator",
+    "color" : "orange darken-1",
+    "level" : 10
+  },
+  {
+    "name"  : "Photoshop",
+    "color" : "light-blue accent-3",
+    "level" : 20
+  },
+  {
+    "name"  : "XD",
+    "color" : "",
+    "level" : 30
+  },
+  {
+    "name"  : "HTML/HTML5",
+    "color" : "deep-orange darken-3",
+    "level" : 40
+  },
+  {
+    "name"  : "CSS/CSS3",
+    "color" : "blue accent-3",
+    "level" : 50
+  },
+  {
+    "name"  : "SCSS",
+    "color" : "pink lighten-3",
+    "level" : 60
+  },
+  {
+    "name"  : "stylus",
+    "color" : "lime darken-1",
+    "level" : 70
+  },
+  {
+    "name"  : "Jade/Pug",
+    "color" : "",
+    "level" : 80
+  },
+  {
+    "name"  : "Javascript",
+    "color" : "",
+    "level" : 90
+  },
+  {
+    "name"  : "PHP",
+    "color" : "",
+    "level" : 100
+  }
+]

@@ -2,20 +2,15 @@
   v-app(id="inspire")
     v-container(fluid)
       v-layout(row xs12 wrap)
-        v-flex(xs6 sm4 md3 v-for="list in lists" :key="list.id" class="skill_box")
+        v-flex(xs12 v-for="list in lists" :key="list.id" class="skill_box")
           p {{list.name}}
-          v-progress-circular(
-            :rotate="-90"
-            :size="150"
-            :width="20"
-            :value="list.level"
-            :color="list.color"
-          ) {{ list.level }}
-      
+          .progress-wrap.progress(:data-progress-percent='list.level' :style="{ 'background-color': list.color }")
+            .progress-bar.progress
 </template>
 
 <script>
 // import axios from 'axios';
+import $ from 'jquery'
 export default {
   data () {
     return {
@@ -31,6 +26,28 @@ export default {
         }
         this.value2 += 10
       }, 1000)
+    moveProgressBar();
+    $(window).resize(function() {
+        moveProgressBar();
+    });
+    function moveProgressBar() {
+        var getPercent = [];
+        var getProgressWrapWidth = $('.progress-wrap').width();
+        // jsonの数値だけ配列にいれる
+        $('.progress-wrap').each(function(){
+            var percent = $(this).data('progress-percent') / 100 * getProgressWrapWidth;
+            getPercent.push(percent);
+        });
+        // アニメーション時間
+        var animationLength = 2000;
+        // 数値を入れる
+        $('.progress-bar').each(function(i){
+            $(this).stop().animate({
+              left: getPercent[i]
+            }, animationLength);
+            i++
+        });
+    }
   },
   created: function () {
     var lists = require("../assets/skills.json")
@@ -40,6 +57,18 @@ export default {
 </script>
 
 <style lang="stylus" conputed>
-.skill_box
-  text-align center
+.progress
+  width 100%
+  height 10px
+.progress-wrap
+  background #f80
+  margin-bottom 20px
+  overflow hidden
+  position relative
+  border-radius 15px
+  .progress-bar
+    background #ddd
+    left 0
+    position absolute
+    top 0
 </style>

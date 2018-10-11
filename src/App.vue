@@ -2,19 +2,26 @@
   v-app
     Header
     v-content
-      Content
+      router-view
     Footer
 </template>
 
 <script>
-import Content from './components/Content'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
+
+import Skills from './components/Skills'
+import Made from './components/Made'
+import Like from './components/Like'
+import Social from './components/Social'
 
 export default {
   name: 'App',
   components: {
-    Content,
+    Skills,
+    Made,
+    Social,
+    Like,
     Header,
     Footer
   },

@@ -7,16 +7,16 @@
       absolute="true"
       shift
     )
-      v-btn(dark)
+      v-btn(to="/" dark)
         span Me
         v-icon person
-      v-btn(dark)
+      v-btn(to="made" dark)
         span I Made
         v-icon code
-      v-btn(dark)
+      v-btn(to="like" dark)
         span Like
         v-icon thumb_up_alt
-      v-btn(dark)
+      v-btn(to="social" dark)
         span Social
         v-icon share
 </template>

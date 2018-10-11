@@ -14,18 +14,11 @@ import $ from 'jquery'
 export default {
   data () {
     return {
-      interval: {},
       value: 0,
       list: []
     }
   },
   mounted () {
-    this.interval = setInterval(() => {
-        if (this.value2 === 100) {
-          return false
-        }
-        this.value2 += 10
-      }, 1000)
     moveProgressBar();
     $(window).resize(function() {
         moveProgressBar();
@@ -57,6 +50,8 @@ export default {
 </script>
 
 <style lang="stylus" conputed>
+.container
+  padding-bottom 60px
 .progress
   width 100%
   height 10px

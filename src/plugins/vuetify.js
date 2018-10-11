@@ -21,6 +21,7 @@ import {
   VForm,
   VSnackbar,
   VProgressCircular,
+  VBottomNav,
 } from 'vuetify'
 import 'vuetify/src/stylus/app.styl'
 
@@ -45,6 +46,7 @@ Vue.use(Vuetify, {
     VForm,
     VSnackbar,
     VProgressCircular,
+    VBottomNav,
   },
   theme: {
     primary: '#1976D2',

@@ -4,7 +4,7 @@
       :active.sync="bottomNav"
       :color="color"
       :value="true"
-      absolute="true"
+      absolute
       shift
     )
       v-btn(to="/" dark)

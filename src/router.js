@@ -26,10 +26,8 @@ const routes = [
   }
 ];
 
-// eslint-disable-next-line
-const router = new VueRouter({
+export default new VueRouter({
   routes,
-  mode: 'history'
-})
-
-export default new VueRouter({routes});
+  mode: 'history',
+  base: '/portfolio/',
+});

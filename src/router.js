@@ -29,5 +29,5 @@ const routes = [
 export default new VueRouter({
   routes,
   mode: 'history',
-  base: '/portfolio/',
+  base: '/portfolio/'
 });

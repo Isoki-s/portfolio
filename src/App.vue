@@ -32,3 +32,9 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.v-content
+  margin-bottom 60px
+</style>
+

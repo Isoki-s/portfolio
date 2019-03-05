@@ -29,5 +29,12 @@ const routes = [
 export default new VueRouter({
   routes,
   mode: 'history',
-  base: '/portfolio/'
+  base: '/portfolio/',
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 });

@@ -2,7 +2,7 @@
   v-app
     v-container(fluid)
       v-layout(row xs12 wrap)
-        h1 Social deploy test commit
+        h1 Social
 </template>
 
 <script>

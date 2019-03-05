@@ -1,24 +1,23 @@
 <template lang="pug">
-  v-card(height="60px")
-    v-bottom-nav(
-      :active.sync="bottomNav"
-      :color="color"
-      :value="true"
-      absolute
-      shift
-    )
-      v-btn(to="/" dark)
-        span Me
-        v-icon person
-      v-btn(to="made" dark)
-        span I Made
-        v-icon code
-      v-btn(to="like" dark)
-        span Like
-        v-icon thumb_up_alt
-      v-btn(to="social" dark)
-        span Social
-        v-icon share
+  v-bottom-nav(
+    :active.sync="bottomNav"
+    :color="color"
+    :value="true"
+    absolute
+    shift
+  )
+    v-btn(to="/")
+      span Me
+      v-icon person
+    v-btn(to="made")
+      span I Made
+      v-icon code
+    v-btn(to="like")
+      span Like
+      v-icon thumb_up_alt
+    v-btn(to="social")
+      span Social
+      v-icon share
 </template>
 
 <script>
@@ -31,10 +30,12 @@ export default {
   computed: {
     color () {
       switch (this.bottomNav) {
-        case 0: return 'indigo accent-4'
-        case 1: return 'cyan'
-        case 2: return 'pink accent-2'
-        case 3: return 'green '
+        // chenge color
+        // case 0: return 'indigo accent-4'
+        // case 1: return 'cyan'
+        // case 2: return 'pink accent-2'
+        // case 3: return 'green '
+        case 0: return 'white'
       }
     }
   }
@@ -42,7 +43,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.v-card
+.v-bottom-nav
   position fixed
   bottom 0
   left 0

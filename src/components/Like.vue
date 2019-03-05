@@ -1,8 +1,7 @@
 <template lang="pug">
-  v-app
-    v-container(fluid)
-      v-layout(row xs12 wrap)
-        h1 Like
+  v-container(fluid)
+    v-layout(row xs12 wrap)
+      h1 Like
 </template>
 
 <script>

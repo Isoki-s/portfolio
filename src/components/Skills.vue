@@ -1,11 +1,10 @@
 <template lang="pug">
-  v-app(id="inspire")
-    v-container(fluid)
-      v-layout(row xs12 wrap)
-        v-flex(xs12 v-for="list in lists" :key="list.id" class="skill_box")
-          p {{list.name}}
-          .progress-wrap.progress(:data-progress-percent='list.level' :style="{ 'background-color': list.color }")
-            .progress-bar.progress
+  v-container(fluid)
+    v-layout(row xs12 wrap)
+      v-flex(xs12 v-for="list in lists" :key="list.id" class="skill_box")
+        p.list_name {{list.name}}
+        .progress-wrap.progress(:data-progress-percent='list.level' :style="{ 'background-color': list.color }")
+          .progress-bar.progress
 </template>
 
 <script>
@@ -54,10 +53,10 @@ export default {
   padding-bottom 60px
 .progress
   width 100%
-  height 10px
+  height 5px
 .progress-wrap
   background #f80
-  margin-bottom 20px
+  margin-bottom 15px
   overflow hidden
   position relative
   border-radius 15px
@@ -66,4 +65,6 @@ export default {
     left 0
     position absolute
     top 0
+.list_name
+  margin-bottom 10px
 </style>

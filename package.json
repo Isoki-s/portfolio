@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -26,8 +27,11 @@
     }
   },
   "dependencies": {
+    "@babel/core": "^7.3.4",
     "@vue/cli": "^3.0.1",
     "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "eslint-loader": "^2.1.2",
     "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "pug": "^2.0.3",
@@ -35,10 +39,11 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue": "^2.5.16",
-    "vue-router": "^3.0.1",
+    "vue-router": "^3.0.2",
     "vuelidate": "^0.7.4",
     "vuetify": "^1.1.9",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack": "^4.29.6"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.0.0-beta.49",

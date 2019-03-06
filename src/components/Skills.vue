@@ -8,7 +8,10 @@
     v-layout(row xs12 wrap)
       h1 Skills
       v-flex(xs12 v-for="list in lists" :key="list.id" class="skill_box")
-        p.list_name {{list.name}}
+        p.list_name
+          icon-base(:icon-name='list.icon' width="16" height="16")
+            components(:is=`"icon-" + list.icon` :fill="list.color")
+          | {{list.name}}
         .progress-wrap.progress(:data-progress-percent='list.level' :style="{ 'background-color': list.color }")
           .progress-bar.progress
     //- v-layout(row xs12 wrap)
@@ -28,9 +31,19 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import IconBase from './IconBase'
+import IconAi from './icons/IconAi'
+import IconPs from './icons/IconPs'
+import IconXd from './icons/IconXd'
 import $ from 'jquery'
+
 export default {
+  components: {
+    IconBase,
+    IconAi,
+    IconPs,
+    IconXd
+  },
   data () {
     return {
       value: 0,

@@ -18,7 +18,7 @@
             v-spacer
             v-btn(icon @click="show = !show")
               v-icon {{ show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
-          v-slide-y-transition
+          .v-slide-y-transition
             v-card-text(v-show="show") 
                 | Vue.js
                 br

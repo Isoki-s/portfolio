@@ -12,7 +12,7 @@
   {
     "name"  : "XD",
     "color" : "#F300B2",
-    "level" : 60
+    "level" : 90
   },
   {
     "name"  : "HTML/HTML5",
@@ -22,7 +22,7 @@
   {
     "name"  : "CSS/CSS3",
     "color" : "#2299DC",
-    "level" : 70
+    "level" : 80
   },
   {
     "name"  : "SCSS",
@@ -42,11 +42,11 @@
   {
     "name"  : "Javascript",
     "color" : "#F4DA1A",
-    "level" : 20
+    "level" : 25
   },
   {
     "name"  : "PHP",
     "color" : "#6365A3",
-    "level" : 10
+    "level" : 20
   }
 ]

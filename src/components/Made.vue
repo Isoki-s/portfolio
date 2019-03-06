@@ -5,7 +5,7 @@
         v-card(class="card")
           img(
             class="image_sr"
-            :src="image_sr"
+            :src="image_sr" 
             height="200px"
           )
           v-card-title(primary-title)

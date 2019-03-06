@@ -7,12 +7,4 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      // title: 'portfolio',
-      // drawer: false
-    }
-  }
-}
 </script>

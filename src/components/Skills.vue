@@ -1,10 +1,30 @@
 <template lang="pug">
   v-container(fluid)
     v-layout(row xs12 wrap)
+      h1 About me
+      v-flex(xs12)
+        p Front-end Engineer
+    v-spacer
+    v-layout(row xs12 wrap)
+      h1 Skills
       v-flex(xs12 v-for="list in lists" :key="list.id" class="skill_box")
         p.list_name {{list.name}}
         .progress-wrap.progress(:data-progress-percent='list.level' :style="{ 'background-color': list.color }")
           .progress-bar.progress
+    //- v-layout(row xs12 wrap)
+    //-   h1 Skills
+    //-   v-flex(xs12)
+    //-     p HTML5 / Pug
+    //-       | <br>CSS3 / Stylus / SASS / SCSS
+    //-       | <br>JavaScript / Vue / Node
+    //-       | <br>PHP / Laravel 
+    //-       | <br>WordPress / MySQL
+    //-       | <br>Git / GitHub / CircleCI
+    //-       | <br>VSCode / 
+    //-       | <br>XD / Photoshop / Illustrator
+    //-       | <br>Slack / Chatwork
+    //-       | <br>Backlog / Redmine
+    //-       | <br>etc…
 </template>
 
 <script>
@@ -49,6 +69,10 @@ export default {
 </script>
 
 <style lang="stylus" conputed>
+h1
+  margin-bottom 8px
+.spacer
+  margin-bottom 30px
 .container
   padding-bottom 60px
 .progress
@@ -66,5 +90,5 @@ export default {
     position absolute
     top 0
 .list_name
-  margin-bottom 10px
+  margin-bottom 4px
 </style>

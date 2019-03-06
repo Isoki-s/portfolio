@@ -38,5 +38,10 @@ export default {
 .v-content
   font-family: 'Quicksand', sans-serif;
   margin-bottom 60px
+
+.v-content
+  width 94%
+  max-width 900px
+  margin auto
 </style>
 

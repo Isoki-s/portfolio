@@ -31,9 +31,9 @@
   },
   {
     "name"  : "SCSS",
-    "color" : "pink lighten-3",
+    "color" : "#CD6699",
     "level" : 80,
-    "icon"  : "Css3"
+    "icon"  : "Sass"
   },
   {
     "name"  : "stylus",

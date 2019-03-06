@@ -35,6 +35,13 @@ import IconBase from './IconBase'
 import IconAi from './icons/IconAi'
 import IconPs from './icons/IconPs'
 import IconXd from './icons/IconXd'
+import IconHtml5 from './icons/IconHtml5'
+import IconCss3 from './icons/IconCss3'
+import IconSass from './icons/IconSass'
+import IconStylus from './icons/IconStylus'
+import IconPug from './icons/IconPug'
+import IconJs from './icons/IconJs'
+import IconPhp from './icons/IconPhp'
 import $ from 'jquery'
 
 export default {
@@ -42,7 +49,14 @@ export default {
     IconBase,
     IconAi,
     IconPs,
-    IconXd
+    IconXd,
+    IconHtml5,
+    IconCss3,
+    IconSass,
+    IconStylus,
+    IconJs,
+    IconPhp,
+    IconPug
   },
   data () {
     return {

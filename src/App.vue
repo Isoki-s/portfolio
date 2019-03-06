@@ -33,8 +33,10 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 .v-content
+  font-family: 'Quicksand', sans-serif;
   margin-bottom 60px
 </style>
 

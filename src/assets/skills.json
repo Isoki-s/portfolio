@@ -2,13 +2,13 @@
   {
     "name"  : "Illustarator",
     "color" : "#F49F31",
-    "level" : 60,
+    "level" : 70,
     "icon"  : "Ai"
   },
   {
     "name"  : "Photoshop",
     "color" : "#2488FF",
-    "level" : 30,
+    "level" : 40,
     "icon"  : "Ps"
   },
   {
@@ -20,7 +20,7 @@
   {
     "name"  : "HTML/HTML5",
     "color" : "#EB4E20",
-    "level" : 80,
+    "level" : 90,
     "icon"  : "Html5"
   },
   {
@@ -38,26 +38,26 @@
   {
     "name"  : "stylus",
     "color" : "#A4CB0C",
-    "level" : 60,
+    "level" : 70,
     "icon"  : "Stylus"
   },
   {
     "name"  : "Jade/Pug",
     "color" : "#432620",
-    "level" : 60,
+    "level" : 70,
     "icon"  : "Pug"
   },
   {
     "name"  : "Javascript",
     "color" : "#F4DA1A",
-    "level" : 25,
+    "level" : 30,
     "icon"  : "Js"
 
   },
   {
     "name"  : "PHP",
     "color" : "#6365A3",
-    "level" : 20,
+    "level" : 30,
     "icon"  : "Php"
   }
 ]

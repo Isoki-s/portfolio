@@ -106,11 +106,11 @@ h1
   width 100%
   height 5px
 .progress-wrap
+  transform skew(-60deg)
   background #f80
   margin-bottom 15px
   overflow hidden
   position relative
-  border-radius 15px
   .progress-bar
     background #ddd
     left 0

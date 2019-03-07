@@ -2,8 +2,8 @@
   v-container(fluid)
     v-layout(row wrap)
       v-flex(xs12)
-        v-card
-          v-layout(row wrap)
+        v-card.out-skew
+          v-layout.in-skew(row wrap)
             v-flex(xs12 sm5 md5 align-center)
               img(
                 class="image_sr"
@@ -17,7 +17,7 @@
                   h2 Slack Reminder
                   div You can make Slack Reminder text easily!
           v-divider(light)
-          v-card-actions.pa-3
+          v-card-actions.pa-3.in-skew
             v-tooltip(right)
               template(v-slot:activator="{ on }")
                 v-btn.bhm(color="white" fab light small href="https://isoki-s.github.io/slack_reminder/" target="_blank" slot="activator")
@@ -54,6 +54,10 @@ export default {
 <style lang="stylus" conputed>
 h2
   display block
+.out-skew
+    transform skew(-10deg)
+.in-skew
+    transform skew(10deg)
 .v-card
   img
     width auto

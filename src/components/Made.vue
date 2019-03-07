@@ -55,9 +55,9 @@ export default {
 h2
   display block
 .out-skew
-    transform skew(-10deg)
+    transform skew(-4deg)
 .in-skew
-    transform skew(10deg)
+    transform skew(4deg)
 .v-card
   img
     width auto

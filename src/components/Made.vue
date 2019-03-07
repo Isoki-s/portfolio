@@ -1,37 +1,50 @@
 <template lang="pug">
   v-container(fluid)
     v-layout(row wrap)
-      v-flex(xs12 sm6)
-        v-card(class="card")
-          img(
-            class="image_sr"
-            :src="image_sr" 
-            height="200px"
-          )
-          v-card-title(primary-title)
-            div
-              .headline Slack Reminder
-              span(class="grey--text") Who What When
-          v-card-actions
-            v-btn(flat href="https://isoki-s.github.io/slack_reminder/" target="_blank") Try App
-              v-icon(dark right) filter_none
+      v-flex(xs12)
+        v-card
+          v-layout(row wrap)
+            v-flex(xs12 sm5 md5 align-center)
+              img(
+                class="image_sr"
+                :src="image_sr" 
+                height="150px"
+                contain
+              )
+            v-flex(xs12 sm7 md7)
+              v-card-title(primary-title)
+                div
+                  h2 Slack Reminder
+                  div You can make Slack Reminder text easily!
+          v-divider(light)
+          v-card-actions.pa-3
+            v-tooltip(right)
+              template(v-slot:activator="{ on }")
+                v-btn.bhm(color="white" fab light small href="https://isoki-s.github.io/slack_reminder/" target="_blank" slot="activator")
+              span.test Try me!
             v-spacer
-            v-btn(icon @click="show = !show")
-              v-icon {{ show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
-          .v-slide-y-transition
-            v-card-text(v-show="show") 
-                | Vue.js
-                br
-                | Pug
-                br
-                | Stylus
+            icon-vue.skillicon
+            icon-yarn.skillicon
+            icon-pug.skillicon
+            icon-stylus.skillicon
+
 </template>
 
 <script>
+import IconVue from './icons/IconVue128'
+import IconStylus from './icons/IconStylus128'
+import IconYarn from './icons/IconYarn'
+import IconPug from './icons/IconPug128'
+
 export default {
+  components: {
+    IconVue,
+    IconStylus,
+    IconYarn,
+    IconPug
+  },
   data () {
     return {
-      show: false,
       image_sr: require("../assets/sr.png")
     }
   }
@@ -39,10 +52,21 @@ export default {
 </script>
 
 <style lang="stylus" conputed>
+h2
+  display block
 .v-card
   img
-    width 100%
-    height auto
+    width auto
   .image_sr
-    padding 1em 1em 0
+    padding 0.8em
+.bhm
+  background-image url("https://stickershop.line-scdn.net/stickershop/v1/sticker/785180/iPhone/sticker_key@2x.png;compress=true")
+  background-position 0px 2px
+  background-size contain
+.v-tooltip__content
+  background #1976D2
+.align-center
+  text-align center
+.skillicon
+  margin-right 4px
 </style>

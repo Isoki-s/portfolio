@@ -1,3 +1,5 @@
 # portfolio
 
-## about me
+わたしです。
+
+https://isoki-s.github.io/portfolio/

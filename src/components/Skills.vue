@@ -4,10 +4,24 @@
       v-flex(xs12)
         div.text-align-center
           h2 About me
-          p Front-end Engineer
+        div.css_box
+          spanc.class_name .isoki 
+          span.bracket {
+          span.indent
+            span.property job
+            span.colon : 
+            span.value Front-end-Engineer
+            span.colon1  ;
+          span.indent
+            span.property height
+            span.colon : 
+            span.value  183cm
+            span.colon  ;
+          span.bracket }
     v-spacer
     v-layout(row xs12 wrap)
-      h2.text-align-center Skills
+      v-flex.text-align-center
+        h2 Skills
       v-flex(xs12 v-for="list in lists" :key="list.id" class="skill_box")
         p.list_name
           icon-base(:icon-name='list.icon' width="16" height="16")
@@ -119,4 +133,23 @@ h2
     top 0
 .list_name
   margin-bottom 4px
+
+.css_box
+  width 200px
+  margin 0 auto
+  background-color #333
+  padding 10px
+  border-radius 3px
+  .class_name
+    color #A6E22E
+  .bracket
+  .colon
+    color white
+  .property
+    color #66D9EF
+  .value
+    color #AE81FF
+  .indent
+    display block
+    margin-left 1em
 </style>

@@ -11,6 +11,7 @@
           | <br>Dog(especially Shiba) / Cat
           | <br>Coffee
           | <br>Apple / Gopro
+        p now updating...
 
 </template>
 

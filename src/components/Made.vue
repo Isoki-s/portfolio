@@ -81,8 +81,8 @@ export default {
 h2
   display block
 .out-skew
-    transform skew(-4deg)
-    border-top 4px solid #1976D2
+  transform skew(-4deg)
+  // border-top 4px solid #1976D2
 .in-skew
     transform skew(4deg)
 .v-card

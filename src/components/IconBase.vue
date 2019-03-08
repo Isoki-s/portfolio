@@ -7,7 +7,7 @@
     role="presentation"
   )
     title(:id="iconName") {{ iconName }} icon
-    slot 
+    slot
 </template>
 
 <script>

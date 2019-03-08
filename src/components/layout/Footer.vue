@@ -1,7 +1,7 @@
 <template lang="pug">
   v-bottom-nav(
     :active.sync="bottomNav"
-    :color="color"
+    color="white"
     :value="true"
     absolute
     shift

@@ -7,7 +7,7 @@
             v-flex(xs12 sm5 md5 align-center)
               img(
                 class="image_sr"
-                :src="image_sr" 
+                :src="image_sr"
                 height="150px"
                 contain
               )

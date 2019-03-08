@@ -17,11 +17,9 @@
 </template>
 
 <style lang="stylus" scoped>
-
-.head-text
-	font-size 18px
-	font-weight bold
+h2
 	text-align center
+
 .bar
 	position relative
 	padding 0 8px

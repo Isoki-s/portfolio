@@ -20,7 +20,7 @@
           v-card-actions.pa-3.in-skew
             v-tooltip(right)
               template(v-slot:activator="{ on }")
-                v-btn.bhm(color="white" fab light small href="https://isoki-s.github.io/slack_reminder/" target="_blank" slot="activator")
+                v-btn.bhm(color="white" fab light small href="https://isoki-s.github.io/slack_reminder/" target="_blank" slot="activator" :style="{ backgroundImage: 'url(' + author + ')' }")
               span.test Try me!
             v-spacer
             icon-vue.skillicon
@@ -45,7 +45,8 @@ export default {
   },
   data () {
     return {
-      image_sr: require("../assets/sr.png")
+      image_sr: require("../assets/sr.png"),
+      author: "https://stickershop.line-scdn.net/stickershop/v1/sticker/785180/iPhone/sticker_key@2x.png"
     }
   }
 }
@@ -64,7 +65,6 @@ h2
   .image_sr
     padding 0.8em
 .bhm
-  background-image url("https://stickershop.line-scdn.net/stickershop/v1/sticker/785180/iPhone/sticker_key@2x.png;compress=true")
   background-position 0px 2px
   background-size contain
 .v-tooltip__content

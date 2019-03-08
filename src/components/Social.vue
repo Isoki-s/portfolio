@@ -6,20 +6,16 @@
 				.bar
 					a(href="https://www.facebook.com/isoki.s" target="_blank").fab.fa-facebook
 					a(href="https://github.com/Isoki-s" target="_blank").fab.fa-github
-					a(href="#" target="_blank" v-on:mouseover="mouseover").fab.fa-instagram.close
-					a(href="#" target="_blank" v-on:mouseover="mouseover").fab.fa-twitter.close
-				p will know it we are close
+					v-tooltip(bottom)
+						template(v-slot:activator="{ on }")
+							.fab.fa-instagram.close(slot="activator")
+						span.test will know it we are close
+					v-tooltip(bottom)
+						template(v-slot:activator="{ on }")
+							.fab.fa-twitter.close(slot="activator")
+						span.test will know it we are close
 </template>
 
-<script>
-export default {
-  methods: {
-    mouseover: function () {
-      // 特定の要素にhover時に表示する
-    }
-  }
-}
-</script>
 <style lang="stylus" conputed>
 
 .head-text
@@ -102,4 +98,7 @@ export default {
 			&::after
 				transform skew(-12deg) scale(1)
 				opacity 1
+
+.v-tooltip__content
+	background #333
 </style>

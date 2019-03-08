@@ -11,7 +11,6 @@
 <script>
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
-
 import Skills from './components/Skills'
 import Made from './components/Made'
 import Like from './components/Like'
@@ -37,14 +36,12 @@ export default {
 
 <style lang="stylus">
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-.v-content
-  font-family: 'Quicksand', sans-serif;
-  margin-bottom 60px
 
 .v-content
   width 94%
   max-width 900px
-  margin auto
+  margin 0 auto 60px
+  font-family: 'Quicksand', sans-serif;
 
 // page transition
 .v-enter {

@@ -16,7 +16,7 @@
 						span.test will know it we are close
 </template>
 
-<style lang="stylus" conputed>
+<style lang="stylus" scoped>
 
 .head-text
 	font-size 18px

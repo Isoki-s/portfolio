@@ -95,7 +95,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" conputed>
+<style lang="stylus" scoped>
 h1
   margin-bottom 8px
 .spacer

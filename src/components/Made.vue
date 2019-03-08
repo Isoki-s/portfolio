@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" conputed>
+<style lang="stylus" scoped>
 h2
   display block
 .out-skew

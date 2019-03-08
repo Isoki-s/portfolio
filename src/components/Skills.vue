@@ -1,12 +1,13 @@
 <template lang="pug">
   v-container(fluid)
     v-layout(row xs12 wrap)
-      h1 About me
       v-flex(xs12)
-        p Front-end Engineer
+        div.text-align-center
+          h2 About me
+          p Front-end Engineer
     v-spacer
     v-layout(row xs12 wrap)
-      h1 Skills
+      h2.text-align-center Skills
       v-flex(xs12 v-for="list in lists" :key="list.id" class="skill_box")
         p.list_name
           icon-base(:icon-name='list.icon' width="16" height="16")
@@ -20,7 +21,7 @@
     //-     p HTML5 / Pug
     //-       | <br>CSS3 / Stylus / SASS / SCSS
     //-       | <br>JavaScript / Vue / Node
-    //-       | <br>PHP / Laravel 
+    //-       | <br>PHP / Laravel
     //-       | <br>WordPress / MySQL
     //-       | <br>Git / GitHub / CircleCI
     //-       | <br>VSCode / 
@@ -96,12 +97,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-h1
+h2
   margin-bottom 8px
+.text-align-center
+  text-align center
 .spacer
   margin-bottom 30px
-.container
-  padding-bottom 60px
 .progress
   width 100%
   height 5px
